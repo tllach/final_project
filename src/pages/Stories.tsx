@@ -1,6 +1,7 @@
 import {Main} from '../layout/Main';
+import Card from '../components/cards';
 
-export  function History() {
+export  function Stories() {
     return (
         <Main>
             <div className="min-h-screen bg-gray-100 p-8">
@@ -54,33 +55,21 @@ export  function History() {
             <section>
                 <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Salón de la Fama</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img
-                    src="src\assets\mariecurie.jpeg"
-                    alt="Marie Curie"
-                    className="w-32 h-32 rounded-full mx-auto mb-4"
+                    <Card 
+                        title = "Marie Curie"
+                        description = "Física y química pionera en la investigación de la radioactividad."
+                        image = "src\assets\rolemodels\mariecurie.jpeg"
                     />
-                    <h3 className="text-2xl font-bold text-purple-600 mb-2">Marie Curie</h3>
-                    <p className="text-gray-700">Física y química pionera en la investigación de la radioactividad.</p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img
-                    src="src\assets\katherinejohnson.jpeg"
-                    alt="Katherine Johnson"
-                    className="w-32 h-32 rounded-full mx-auto mb-4"
+                    <Card 
+                        title = "Katherine Johnson"
+                        description = "Matemática clave en la exploración espacial de la NASA."
+                        image = "src\assets\rolemodels\katherinejohnson.jpeg"
                     />
-                    <h3 className="text-2xl font-bold text-purple-600 mb-2">Katherine Johnson</h3>
-                    <p className="text-gray-700">Matemática clave en la exploración espacial de la NASA.</p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img
-                    src="src\assets\adalovelace.jpeg"
-                    alt="Ada Lovelace"
-                    className="w-32 h-32 rounded-full mx-auto mb-4"
+                    <Card 
+                        title = "Ada Lovelace"
+                        description = "Primera programadora en la historia de la informática."
+                        image = "src\assets\rolemodels\adalovelace.jpeg"
                     />
-                    <h3 className="text-2xl font-bold text-purple-600 mb-2">Ada Lovelace</h3>
-                    <p className="text-gray-700">Primera programadora en la historia de la informática.</p>
-                </div>
                 </div>
             </section>
             </div>
