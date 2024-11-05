@@ -2,8 +2,15 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center w-full h-[80px] bg-[#771777] px-5">
-      <div className="flex items-center gap-x-4">
+    <header className="flex justify-between w-full h-[80px] bg-[#2a0046]">
+      <div className="flex items-center">
+        <img
+          src="src\assets\logo.png"
+          alt="Logo de Ciencia Heredada"
+          className="ml-5 size-16 rounded-full"
+        />
+      </div>
+      <div className="flex  items-center gap-x-4 font-bold font-sans">
         <div className="text-white">
           <Link to="/">Home</Link>
         </div>
@@ -11,7 +18,10 @@ export function Header() {
           <Link to="/about">Sobre Nosotras</Link>
         </div>
         <div className="text-white">
-          <Link to="/stories">Historias inspiradoras</Link>
+          <Link to="/salonfama">Historias inspiradoras</Link>
+        </div>
+        <div className="text-white">
+          <Link to="/resources">Recursos</Link>
         </div>
       </div>
       <div className="mr-[100px] hidden sm:inline-block">
