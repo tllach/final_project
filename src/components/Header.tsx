@@ -18,7 +18,7 @@ export function Header() {
           <Link to="/about">Sobre Nosotras</Link>
         </div>
         <div className="text-white">
-          <Link to="/salonfama">Historias inspiradoras</Link>
+          <Link to="/salonfama">Salon de la Fama</Link>
         </div>
         <div className="text-white">
           <Link to="/resources">Recursos</Link>
