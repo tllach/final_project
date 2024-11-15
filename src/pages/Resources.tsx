@@ -6,14 +6,13 @@ const ResourcesPage = () => {
     return (
         <Main>
             <div className="min-h-screen bg-gray-100 p-6">
-                <header className="text-center mb-12">
-                    <h1 className="text-3xl font-bold text-blue-900">Recursos para Mujeres Jóvenes en STEM</h1>
+                <div className="text-center mb-12 mt-8">
+                    <h1 className="text-3xl font-bold text-blue-950">Recursos para Mujeres Jóvenes en STEM</h1>
                     <p className="text-gray-700 max-w-xl mx-auto mt-4">
                         Explora diversos recursos para motivar y apoyar a las jóvenes en su camino hacia una carrera en STEM.
                     </p>
-                </header>
-                <main className="max-w-5xl mx-auto">
-                    {/* Programas y Campamentos */}
+                </div>
+                <div className="max-w-5xl mx-auto">
                     <Section title="Programas y Campamentos de Verano">
                         <ResourceCard
                             title="Girls Who Code"
@@ -31,8 +30,6 @@ const ResourcesPage = () => {
                             link="https://technovationchallenge.org/"
                         />
                     </Section>
-
-                    {/* Becas y Apoyo Financiero */}
                     <Section title="Becas y Apoyo Financiero">
                         <ResourceCard
                             title="Google Women Techmakers"
@@ -50,8 +47,6 @@ const ResourcesPage = () => {
                             link="https://web.icetex.gov.co/becas/becas-para-estudios-en-el-exterior/programas-especiales/programa-jovenes-talentos/areas-ciencias-tecnologia-ingenieria-y-matematicas-stem"
                         />
                     </Section>
-
-                    {/* Mentoría y Redes de Apoyo */}
                     <Section title="Mentoría y Redes de Apoyo">
                         <ResourceCard
                             title="Million Women Mentors"
@@ -69,7 +64,7 @@ const ResourcesPage = () => {
                             link="https://steam.geekgirlslatam.org/"
                         />
                     </Section>
-                </main>
+                </div>
             </div>
         </Main>
     );

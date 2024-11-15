@@ -15,13 +15,13 @@ export function Header() {
           <Link to="/">Home</Link>
         </div>
         <div className="text-white">
-          <Link to="/about">Sobre Nosotras</Link>
-        </div>
-        <div className="text-white">
           <Link to="/salonfama">Salon de la Fama</Link>
         </div>
         <div className="text-white">
           <Link to="/resources">Recursos</Link>
+        </div>
+        <div className="text-white">
+          <Link to="/about">Sobre Nosotras</Link>
         </div>
       </div>
       <div className="mr-[100px] hidden sm:inline-block">

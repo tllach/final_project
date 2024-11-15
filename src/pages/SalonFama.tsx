@@ -6,7 +6,7 @@ export  function SalonFama() {
         <Main>
             <div className="min-h-screen bg-gray-100 p-4 sm:p-6 md:p-8">
                 <section className="text-center mb-12">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">Salón de la Fama</h1>
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-950 mb-4 mt-3">Salón de la Fama</h1>
                     <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
                         Detrás de cada gran avance en ciencia y tecnología, hay mujeres extraordinarias que rompieron barreras 
                         y allanaron el camino para las futuras generaciones. En esta sección, exploramos la vida y legado de 

@@ -5,7 +5,6 @@ export function Home() {
     return (
         <Main>
             <div className="min-h-screen">
-                {/* Introducción de la idea */}
                 <div className="grid md:grid-cols-2 gap-8 py-16 px-8 bg-[#ffffff] rounded-lg shadow-lg">
                     <section className="self-center">
                         <h1 className="text-5xl font-extrabold text-[#00008B] mb-6 tracking-tight leading-snug">
@@ -28,7 +27,6 @@ export function Home() {
                         />
                     </div>
                 </div>
-                {/* Sección de estadísticas */}
                 <Facts />
             </div>
         </Main>
