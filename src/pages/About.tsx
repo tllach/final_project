@@ -27,8 +27,8 @@ const AboutPage = () => {
                                 image="src\assets\tabata.jpg"
                             />
                             <ProfileCard 
-                                name="Maria Victoria Paez"
-                                description="Estudiante de ingeniería de sistemas de último semestre, comprometida con igualdad de género en STEM"
+                                name="Maria Valentina Páez Romero"
+                                description="Estudiante de ingeniería de sistemas de último semestre. Tenemos que demostrarle a la sociedad que STEM también es un lugar para mujeres."
                                 image="src\assets\maria valentina.jpg"
                             />
                         </div>
