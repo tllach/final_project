@@ -3,3 +3,4 @@ pandas           # Si estás utilizando pandas para análisis de datos
 flask            # Si estás desarrollando una aplicación web con Flask
 requests         # Si necesitas hacer peticiones HTTP
 uvicorn
+fastapi
