@@ -5,5 +5,5 @@ requests         # Si necesitas hacer peticiones HTTP
 uvicorn
 fastapi
 joblib
-ydantic
+pydantic
 os
