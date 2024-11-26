@@ -4,3 +4,6 @@ flask            # Si estás desarrollando una aplicación web con Flask
 requests         # Si necesitas hacer peticiones HTTP
 uvicorn
 fastapi
+joblib
+ydantic
+os
