@@ -59,31 +59,31 @@ const Calculator = () => {
 
   return (
     <Main>
-      <div className="calculator mx-auto max-w-4xl p-8 bg-gray-100 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">STEM ENTRY PROBABILITY CALCULATOR</h2>
-        <form onSubmit={handleSubmit} className="space-y-8">
+      <div className="mx-auto max-w-4xl p-10 bg-white">
+        <h2 className="text-3xl font-extrabold text-center mb-8 text-blue-800 mt-3">Calculadora de probabilidad para entrar en una carrera STEM</h2>
+        <form onSubmit={handleSubmit} className="space-y-12">
           {/* Grupo 1: Acceso a la educación */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-700">1. ACCESO A LA EDUCACIÓN</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-bold mb-6 text-blue-700">1. Acceso a la educación</h3>
+            <div className="space-y-6">
               {[
                 {
                   id: 'question1_1',
-                  text: '1.1 ¿EN TU COLEGIO O COMUNIDAD EXISTEN INICIATIVAS O PROGRAMAS ENFOCADOS EN FOMENTAR LA PARTICIPACIÓN DE MUJERES EN ÁREAS RELACIONADAS CON STEM?',
+                  text: '1.1 ¿En tu colegio o comunidad existen iniciativas o programas enfocados en fomentar la participación de mujeres en áreas relacionadas con stem?',
                 },
                 {
                   id: 'question1_2',
-                  text: '1.2 ¿EN TU COLEGIO SE IMPARTEN CLASES O TALLERES DE CIENCIAS, TECNOLOGÍA, INGENIERÍA O MATEMÁTICAS?',
+                  text: '1.2 ¿En tu colegio se imparten clases o talleres de ciencias, tecnología, ingeniería o matemáticas?',
                 },
                 {
                   id: 'question1_3',
-                  text: '1.3 ¿TIENES ACCESO A RECURSOS EDUCATIVOS PARA APRENDER SOBRE STEM?',
+                  text: '1.3 ¿Tienes acceso a recursos educativos para aprender sobre stem?',
                 },
               ].map(({ id, text }) => (
                 <div key={id}>
-                  <p className="mb-2 font-medium">{text}</p>
+                  <p className="mb-3 text-lg font-medium text-gray-700">{text}</p>
                   <div className="flex gap-4">
-                    {['SÍ', 'TAL VEZ', 'NO'].map((label, index) => (
+                    {['Sí', 'Tal Vez', 'No'].map((label, index) => (
                       <React.Fragment key={`${id}_${index}`}>
                         <input
                           type="radio"
@@ -95,12 +95,12 @@ const Calculator = () => {
                         />
                         <label
                           htmlFor={`${id}_${label}`}
-                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-2 ${
+                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-2 ${
                             index === 0
-                              ? 'bg-blue-500 text-white peer-checked:ring-blue-700 peer-checked:bg-blue-700'
+                              ? 'bg-blue-500 text-white peer-checked:ring-blue-400'
                               : index === 1
-                              ? 'bg-yellow-500 text-white peer-checked:ring-yellow-700 peer-checked:bg-yellow-700'
-                              : 'bg-red-500 text-white peer-checked:ring-red-700 peer-checked:bg-red-700'
+                              ? 'bg-yellow-400 text-white peer-checked:ring-yellow-300'
+                              : 'bg-red-500 text-white peer-checked:ring-red-400'
                           }`}
                         >
                           {label}
@@ -115,30 +115,30 @@ const Calculator = () => {
 
           {/* Grupo 2: Motivación personal */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-700">2. MOTIVACIÓN PERSONAL</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-bold mb-6 text-blue-700">2. Motivación personal</h3>
+            <div className="space-y-6">
               {[
                 {
                   id: 'question2_1',
-                  text: '2.1 ¿TE SIENTES MOTIVADO/A A SEGUIR UNA CARRERA EN STEM?',
+                  text: '2.1 ¿Te sientes motivado/a a seguir una carrera en stem?',
                 },
                 {
                   id: 'question2_2',
-                  text: '2.2 ¿CONOCES A ALGUIEN QUE TE INSPIRE EN STEM?',
+                  text: '2.2 ¿Conoces a alguien que te inspire en stem?',
                 },
                 {
                   id: 'question2_3',
-                  text: '2.3 ¿CONSIDERAS QUE LAS ÁREAS STEM SON IMPORTANTES PARA EL FUTURO?',
+                  text: '2.3 ¿Consideras que las áreas stem son importantes para el futuro?',
                 },
                 {
                   id: 'question2_4',
-                  text: '2.4 ¿TE GUSTAN LAS MATERIAS RELACIONADAS CON STEM?',
+                  text: '2.4 ¿Te gustan las materias relacionadas con stem?',
                 },
               ].map(({ id, text }) => (
                 <div key={id}>
-                  <p className="mb-2 font-medium">{text}</p>
+                  <p className="mb-3 text-lg font-medium text-gray-700">{text}</p>
                   <div className="flex gap-4">
-                    {['SÍ', 'TAL VEZ', 'NO'].map((label, index) => (
+                    {['Sí', 'Tal Vez', 'No'].map((label, index) => (
                       <React.Fragment key={`${id}_${index}`}>
                         <input
                           type="radio"
@@ -150,12 +150,12 @@ const Calculator = () => {
                         />
                         <label
                           htmlFor={`${id}_${label}`}
-                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-2 ${
+                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-2 ${
                             index === 0
-                              ? 'bg-blue-500 text-white peer-checked:ring-blue-700 peer-checked:bg-blue-700'
+                              ? 'bg-blue-500 text-white peer-checked:ring-blue-400'
                               : index === 1
-                              ? 'bg-yellow-500 text-white peer-checked:ring-yellow-700 peer-checked:bg-yellow-700'
-                              : 'bg-red-500 text-white peer-checked:ring-red-700 peer-checked:bg-red-700'
+                              ? 'bg-yellow-400 text-white peer-checked:ring-yellow-300'
+                              : 'bg-red-500 text-white peer-checked:ring-red-400'
                           }`}
                         >
                           {label}
@@ -170,30 +170,30 @@ const Calculator = () => {
 
           {/* Grupo 3: Apoyo familiar */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-700">3. APOYO FAMILIAR</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-bold mb-6 text-blue-700">3. Apoyo familiar</h3>
+            <div className="space-y-6">
               {[
                 {
                   id: 'question3_1',
-                  text: '3.1 ¿TU FAMILIA TE APOYA A PERSEGUIR INTERESES EN STEM?',
+                  text: '3.1 ¿Tu familia te apoya a perseguir intereses en stem?',
                 },
                 {
                   id: 'question3_2',
-                  text: '3.2 ¿TIENES RECURSOS EN CASA PARA APRENDER SOBRE STEM?',
+                  text: '3.2 ¿Tienes recursos en casa para aprender sobre stem?',
                 },
                 {
                   id: 'question3_3',
-                  text: '3.3 ¿TU FAMILIA ESTÁ AL TANTO DE LAS ÁREAS STEM?',
+                  text: '3.3 ¿Tu familia está al tanto de las áreas stem?',
                 },
                 {
                   id: 'question3_4',
-                  text: '3.4 ¿CONSIDERAS QUE TUS PADRES/FAMILIARES TE IMPULSAN A APRENDER MÁS?',
+                  text: '3.4 ¿Consideras que tus padres/familiares te impulsan a aprender más?',
                 },
               ].map(({ id, text }) => (
                 <div key={id}>
-                  <p className="mb-2 font-medium">{text}</p>
+                  <p className="mb-3 text-lg font-medium text-gray-700">{text}</p>
                   <div className="flex gap-4">
-                    {['SÍ', 'TAL VEZ', 'NO'].map((label, index) => (
+                    {['Sí', 'Tal Vez', 'No'].map((label, index) => (
                       <React.Fragment key={`${id}_${index}`}>
                         <input
                           type="radio"
@@ -205,12 +205,12 @@ const Calculator = () => {
                         />
                         <label
                           htmlFor={`${id}_${label}`}
-                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-2 ${
+                          className={`w-1/3 p-4 text-center rounded-lg cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-2 ${
                             index === 0
-                              ? 'bg-blue-500 text-white peer-checked:ring-blue-700 peer-checked:bg-blue-700'
+                              ? 'bg-blue-500 text-white peer-checked:ring-blue-400'
                               : index === 1
-                              ? 'bg-yellow-500 text-white peer-checked:ring-yellow-700 peer-checked:bg-yellow-700'
-                              : 'bg-red-500 text-white peer-checked:ring-red-700 peer-checked:bg-red-700'
+                              ? 'bg-yellow-400 text-white peer-checked:ring-yellow-300'
+                              : 'bg-red-500 text-white peer-checked:ring-red-400'
                           }`}
                         >
                           {label}
@@ -225,19 +225,19 @@ const Calculator = () => {
 
           <button
             type="submit"
-            className="block w-full py-3 mt-6 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+            className="block w-full py-4 mt-10 text-xl font-bold text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg shadow-lg hover:from-blue-600 hover:to-blue-800"
           >
-          CALCULAR PROBABILIDAD
+            Calcular probabilidad
           </button>
         </form>
 
         {result !== null && (
-          <div className="mt-8 p-4 bg-green-100 rounded-lg text-center">
-            <h3 className="text-xl font-semibold text-green-700">Resultado:</h3>
-            <p className="text-lg font-medium text-green-800">
+          <div className="mt-12 p-6 bg-green-100 rounded-lg text-center shadow-md">
+            <h3 className="text-2xl font-bold text-green-700">Resultado:</h3>
+            <p className="mt-4 text-lg font-medium text-green-800">
               {result >= 50
-                ? "¡Probablemente ingreses a una carrera STEM!"
-                : "No es probable que ingreses a una carrera STEM."}
+                ? '¡Probablemente ingreses a una carrera STEM!'
+                : 'No es probable que ingreses a una carrera STEM.'}
             </p>
           </div>
         )}
